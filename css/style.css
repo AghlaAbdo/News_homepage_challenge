@@ -10,8 +10,9 @@
 body {
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
+	justify-content: space-between;
 	align-items: center;
+	min-height: 100vh;
 }
 
 h1 {
@@ -35,12 +36,19 @@ a {
 	margin: 24px 0 16px 0;
 }
 
+.sidebar h3:hover {
+	color: hsl(35, 77%, 62%);
+}
+
 .artcl .text h3 {
 	color: hsl(240, 100%, 5%);
 	font-size: 18px;
 	margin: 8px 0;
 }
 
+.artcl .text h3:hover {
+	color: hsl(5, 85%, 63%);
+}
 
 p {
 	font-size: 15px;
@@ -60,6 +68,10 @@ nav.nav-bar {
 	color:  hsl(236, 13%, 42%);
 	display: flex;
 	gap: 16px;
+}
+
+#nav-links a:hover {
+	color: hsl(5, 85%, 63%);
 }
 
 .menu-icon {
@@ -104,6 +116,12 @@ nav.nav-bar {
 	margin-top: 24px;
 	font-weight: 700;
 	letter-spacing: 4px;
+	transition: all 0.2s;
+}
+
+.btn:hover {
+	color: hsl(36, 100%, 99%);
+	background-color: hsl(240, 100%, 5%);
 }
 
 .hero-img img{
@@ -156,6 +174,17 @@ hr {
 
 }
 
+.attribution {
+	margin-bottom: 0;
+	height: 100%;
+	font-size: 11px;
+	text-align: center;
+	margin: 24px 0 8px 0;
+}
+
+.attribution a {
+	color: hsl(228, 45%, 44%);
+}
 
 @media (min-width: 2000px) {
 	nav.nav-bar {
